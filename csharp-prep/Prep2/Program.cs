@@ -1,4 +1,5 @@
 using System;
+using System.Data;
 
 class Program
 {
@@ -7,27 +8,35 @@ class Program
         Console.Write("What is your grade percentage?: ");
         string gradePercentage = Console.ReadLine();
         int number = int.Parse(gradePercentage);
+        string letter;
 
         if (number >= 90)
         {
-            Console.WriteLine("Your letter calification is: A ");
+            letter = "A";
         }
         else if (number >= 80)
         {
-            Console.WriteLine("Your letter calification is: B ");           
+            letter = "B";          
         }
         else if (number >= 70)
         {
-            Console.WriteLine(" Your letter calification is: C");            
+            letter = "C";            
         }
         else if (number >= 60)
         {
-            Console.WriteLine(" Your letter calification is: D");            
+            letter = "D";
+                    
         }
         else if (number < 60)
         {
-            Console.WriteLine(" Your letter calification is: F");            
+            letter = "F";            
         }
+        else
+        {
+            letter= "F";
+        }
+
+        Console.WriteLine($"Your calification is: {letter}");
 
         if (number >=70)
         {
