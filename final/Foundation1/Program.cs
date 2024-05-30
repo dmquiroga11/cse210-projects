@@ -68,39 +68,39 @@ public class Comment
 
 public class Video
 {
-    private string title;
-    private string author;
-    private int duration;
+    private string _title;
+    private string _author;
+    private int _duration;
     private List<Comment> comments;
 
     public string GetTitle()
     {
-        return title;
+        return _title;
     }
 
     public void SetTitle(string value)
     {
-        title = value;
+        _title = value;
     }
 
     public string GetAuthor()
     {
-        return author;
+        return _author;
     }
 
     public void SetAuthor(string value)
     {
-        author = value;
+        _author = value;
     }
 
     public int GetDuration()
     {
-        return duration;
+        return _duration;
     }
 
     public void SetDuration(int value)
     {
-        duration = value;
+        _duration = value;
     }
 
     public List<Comment> GetComments()
